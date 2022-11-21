@@ -12,6 +12,8 @@ Please refer to this document regarding any doubts
 * [MVN repository for TestNG](https://mvnrepository.com/artifact/org.testng/testng/)
 * [MVN repository for JUnit](https://mvnrepository.com/artifact/junit/junit/)
 * [ChromeDriver](https://chromedriver.chromium.org/)
+* [GeckoDriver](https://github.com/mozilla/geckodriver/releases)
+  * Assets > and download the respective driver for your OS
 
 ### How do I get set up? ###
 
@@ -21,17 +23,11 @@ Please refer to this document regarding any doubts
 * For dependencies:
   * add the latest dependency for selenium (please refer to the links above)
   * add the latest dependency for TestNG (please refer to the links above)
-* Download the latest ChromeDriver release (please refer to the links above)
-* Database configuration
+* Download the latest ChromeDriver and GeckoDriver release (please refer to the links above)
+  * After downloading it, make sure to add it to the resources file on src/resources file on your repository
 * How to run tests
-  * You should start running TestSteps on tests package or run each scenario separately
+  * You may run TestSteps on tests package or run each scenario separately
 * Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
 
 ### Who do I talk to? ###
 
