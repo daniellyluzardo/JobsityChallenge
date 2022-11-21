@@ -29,13 +29,13 @@ public class TestSteps {
         utils.screenshot();
         home.clickOnlineBankingTab();
         sa.assertTrue(home.isNavBarThere());
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         utils.screenshot();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         home.clickFeedbackTab();
         sa.assertTrue(home.isNavBarThere());
         home.clickHomeTab();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         utils.screenshot();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         sa.assertTrue(home.isNavBarThere());
         utils.screenshot();
     }
@@ -50,9 +50,11 @@ public class TestSteps {
         utils.screenshot();
         sa.assertTrue(home.isFeedbackThere());
         home.fillForms("Lorem", "Lorem@ipsum.com", "Lorem ipsum", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum ante massa, ut congue eros tristique ac. Suspendisse tempus pretium metus, tristique facilisis nisl fringilla et. Nam venenatis orci ullamcorper velit bibendum, fringilla dignissim mauris vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus fringilla egestas.");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         utils.screenshot();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         home.clickSendFBButton();
+        utils.screenshot();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
     }
 

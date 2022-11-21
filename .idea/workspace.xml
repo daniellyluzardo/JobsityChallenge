@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1259b65e-4ed2-4f48-b7a2-b1e144649c27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/resources/geckodriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/PageClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/PageClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +68,7 @@
       <recent name="C:\Users\danie\Documents\JobsityChallenge\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestSteps.scenarioFeedbackForm">
+  <component name="RunManager" selected="TestNG.TestSteps">
     <configuration name="TestSteps" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JobsityChallenge" />
       <extension name="coverage">
@@ -128,8 +124,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestSteps.scenarioFeedbackForm" />
         <item itemvalue="TestNG.TestSteps" />
+        <item itemvalue="TestNG.TestSteps.scenarioFeedbackForm" />
       </list>
     </recent_temporary>
   </component>

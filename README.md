@@ -24,6 +24,7 @@ Please refer to this document regarding any doubts
 * Download the latest ChromeDriver release (please refer to the links above)
 * Database configuration
 * How to run tests
+  * You should start running TestSteps on tests package or run each scenario separately
 * Deployment instructions
 
 ### Contribution guidelines ###
@@ -34,5 +35,4 @@ Please refer to this document regarding any doubts
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Repo owner [GITHUB](https://github.com/daniellyluzardo)
