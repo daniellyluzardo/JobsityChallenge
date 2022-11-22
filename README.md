@@ -29,7 +29,7 @@ Please refer to this document regarding any doubts
   * After downloading it, make sure to add it to the resources file on src/resources file on your repository
 * How to run tests
   * You may run TestSteps on tests package or run each scenario separately
-* Deployment instructions
+
 
 ### Who do I talk to? ###
 
