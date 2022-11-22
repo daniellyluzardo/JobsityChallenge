@@ -26,7 +26,7 @@ public class TestSteps {
 
     public static final String dir = "C:\\Screenshots\\";
 
-    @Test(priority = 1)
+    @Test(priority = 3)
     public void scenarioNavigationBar(){
         utils = new Utils(driver);
         utils.setDir(dir + "scenarioNavigationBar");
@@ -45,7 +45,7 @@ public class TestSteps {
         sa.assertTrue(home.isNavBarThere());
         utils.screenshot();
     }
-    @Test(priority = 3)
+    @Test(priority = 2)
     public void scenarioFeedbackForm() {
         utils = new Utils(driver);
         utils.setDir(dir + "scenarioFeedbackForm");
@@ -64,7 +64,7 @@ public class TestSteps {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
     }
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void scenarioClearForm() {
         utils = new Utils(driver);
         utils.setDir(dir + "scenarioClearForm");

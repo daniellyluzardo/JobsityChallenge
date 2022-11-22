@@ -4,8 +4,7 @@ Please refer to this document regarding any doubts
 ### What is this repository for? ###
 
 * Tests are built upon the Selenium WebDriver automation framework, written in Java and executed using the TestNG unit framework.
-
-* Version
+* Version 1.0
 * Please make sure to add the latest stable version dependency of the selenium webdriver library
   * To use selenium, you can either add as a JAR file in your library through Project Structure > Modules > Dependencies > Add Jar or directories
   * Or add the dependency through Maven or Gradle
@@ -29,8 +28,15 @@ Please refer to this document regarding any doubts
   * After downloading it, make sure to add it to the resources file on src/resources file on your repository
 * How to run tests
   * You may run TestSteps on tests package or run each scenario separately
-
+  * You may change test priority to run all scenarios in a certain order  
 
 ### Who do I talk to? ###
 
 * Repo owner [GITHUB](https://github.com/daniellyluzardo)
+
+### Who do I talk to? ###
+* Some scenarios can be added for later use:
+  * Concatenate valid email address (example@example.com)
+  * Try to input Names containing numbers and special characters
+  * Test mandatory fields in Feedback forms
+  * Check if the successful message after sending is showing the correct Name value
