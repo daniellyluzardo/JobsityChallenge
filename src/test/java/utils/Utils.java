@@ -44,6 +44,18 @@ public class Utils {
         SimpleDateFormat dots = new SimpleDateFormat("dd.MM.yyyy-HH.mm.ss");
         return dots.format(date);
     }
+    public void screenshot(String testResult){
+        String archiveName = testResult + currentDate() + ".png";
+        File image = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            File directory = new File(dir);
+            directory.mkdirs();
+            FileHandler.copy(image, new File(directory+"\\" + archiveName));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
     public void screenshot(){
         String archiveName = currentDate() + ".png";
         File image = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -55,5 +67,6 @@ public class Utils {
             System.out.println(e.getMessage());
         }
     }
+
 
 }

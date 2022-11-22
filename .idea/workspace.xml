@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1259b65e-4ed2-4f48-b7a2-b1e144649c27" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/PageClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/PageClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +86,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSteps.scenarioClearForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JobsityChallenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestSteps" />
+      <option name="METHOD_NAME" value="scenarioClearForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSteps.scenarioFeedbackForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JobsityChallenge" />
       <extension name="coverage">
@@ -123,6 +144,7 @@
       <list>
         <item itemvalue="TestNG.TestSteps" />
         <item itemvalue="TestNG.TestSteps.scenarioFeedbackForm" />
+        <item itemvalue="TestNG.TestSteps.scenarioClearForm" />
       </list>
     </recent_temporary>
   </component>
@@ -136,16 +158,5 @@
       <updated>1668993641517</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/TestSteps.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

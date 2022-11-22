@@ -6,7 +6,9 @@ Please refer to this document regarding any doubts
 * Tests are built upon the Selenium WebDriver automation framework, written in Java and executed using the TestNG unit framework.
 
 * Version
-* Please make sure to download the latest stable version of the selenium webdriver library
+* Please make sure to add the latest stable version dependency of the selenium webdriver library
+  * To use selenium, you can either add as a JAR file in your library through Project Structure > Modules > Dependencies > Add Jar or directories
+  * Or add the dependency through Maven or Gradle
 * [WebDriver Documentation](https://www.selenium.dev/documentation/webdriver/)
 * [MVN repository for Selenium](https://mvnrepository.com/artifact/org.seleniumhq.selenium/)
 * [MVN repository for TestNG](https://mvnrepository.com/artifact/org.testng/testng/)

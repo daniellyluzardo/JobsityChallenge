@@ -40,19 +40,28 @@ public class PageClass  {
     private WebElement fbBanner;
     @FindBy(css = ".btn-signin")
     private WebElement sendFeedback;
+    @FindBy(css = "input.btn:nth-child(2)")
+    private WebElement clearFeedback;
 
     public void clickHomeTab() {
         utils.isThere(HomeButton);
         HomeButton.click();}
     public void clickOnlineBankingTab() {
         utils.isThere(OBMenu);
-        OBMenu.click();}
+        OBMenu.click();
+    }
     public void clickFeedbackTab() {
         utils.isThere(feedbackButton);
-        feedbackButton.click();}
+        feedbackButton.click();
+    }
     public void clickSendFBButton() {
         utils.isThere(sendFeedback);
-        sendFeedback.click();}
+        sendFeedback.click();
+    }
+    public void clickClearFBButton() {
+        utils.isThere(clearFeedback);
+        clearFeedback.click();
+    }
     public void fillForms(String nameInfo, String emailInfo, String subjectInfo, String commentInfo) {
         nameField.sendKeys(nameInfo);
         emailField.sendKeys(emailInfo);
