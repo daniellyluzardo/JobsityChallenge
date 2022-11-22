@@ -34,7 +34,7 @@ Please refer to this document regarding any doubts
 
 * Repo owner [GITHUB](https://github.com/daniellyluzardo)
 
-### Who do I talk to? ###
+### Other Scenarios to automate ###
 * Some scenarios can be added for later use:
   * Concatenate valid email address (example@example.com)
   * Try to input Names containing numbers and special characters
