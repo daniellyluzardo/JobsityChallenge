@@ -28,7 +28,9 @@ Please refer to this document regarding any doubts
   * After downloading it, make sure to add it to the resources file on src/resources file on your repository
 * How to run tests
   * You may run TestSteps on tests package or run each scenario separately
-  * You may change test priority to run all scenarios in a certain order  
+  * You may change test priority to run all scenarios in a certain order
+* Screenshots will be stored in C:\Screenshots\
+* You may run with either browsers uncommenting some lines of system property
 
 ### Who do I talk to? ###
 
@@ -40,3 +42,4 @@ Please refer to this document regarding any doubts
   * Try to input Names containing numbers and special characters
   * Test mandatory fields in Feedback forms
   * Check if the successful message after sending is showing the correct Name value
+  * Run with both browsers without having to uncomment

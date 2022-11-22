@@ -1,7 +1,5 @@
 package tests;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,10 +8,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import page.PageClass;
+import pageobjects.PageClass;
 import utils.Utils;
 
-import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
@@ -71,16 +68,16 @@ public class TestSteps {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         sa.assertTrue(home.isNavBarThere());
         utils.screenshot();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         home.clickFeedbackTab();
-        utils.screenshot();
         sa.assertTrue(home.isFeedbackThere());
         home.fillForms("Lorem", "Lorem@ipsum.com", "Lorem ipsum", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum ante massa, ut congue eros tristique ac. Suspendisse tempus pretium metus, tristique facilisis nisl fringilla et. Nam venenatis orci ullamcorper velit bibendum, fringilla dignissim mauris vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus fringilla egestas.");
         utils.screenshot();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         home.clickClearFBButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         utils.screenshot();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.close();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
     }
 
@@ -90,19 +87,21 @@ public class TestSteps {
         sa = new SoftAssert();
         String projectPath = System.getProperty("user.dir");
         //System.setProperty("webdriver.chrome.driver", projectPath+"/src/pages/resources/chromedriver.exe");
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\danie\\Documents\\libs\\drivers\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", projectPath+"/src/pages/resources/geckodriver.exe");
+        //System.setProperty("webdriver.gecko.driver", "C:\\Users\\danie\\Documents\\libs\\drivers\\geckodriver.exe");
         baseUrl = "http://zero.webappsecurity.com/";
-        //driver = new FirefoxDriver();
-        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
+        //driver = new ChromeDriver();
         home = new PageClass(driver);
         utils = new Utils(driver);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get(baseUrl);
+        driver.manage().window().maximize();
     }
     @AfterMethod
     public void afterMethod(ITestResult testResult) throws IOException{
         if (testResult.getStatus() == ITestResult.FAILURE) {
             utils.screenshot(testResult.getName());
     }
-        driver.quit();}
+        driver.close();}
 }
